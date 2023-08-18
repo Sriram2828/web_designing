@@ -1,0 +1,9 @@
+body{
+    background: linear-gradient(35deg,#FF98FF,#7654fc,#15045A);
+    background-attachment: fixed;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

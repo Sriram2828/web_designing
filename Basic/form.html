@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>html forms </title>
+       <meta charset="utf-8">
+       <meta name="author" content="Sriram">
+       <meta name="description" content="This is a basic web page I created for Learning">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+       <link rel="stylesheet" type="text/css" href="formcss.css">
+    </head>
+    <body bgcolor="#000000" style="color: #FFFFFF;">
+        <div>
+            <fieldset>
+                <legend><h3>use of meta tag:</h3></legend>
+                <h4>Using utf 8 we cann display other languages</h4>
+                <p>
+                    தமிழ்,タミル語
+                </p>
+            </fieldset>
+        </div>
+        <p>
+            <fieldset>
+            <legend><h3>Forms:</h3></legend>
+            <form enctype="multipart/form-data">
+                <input type="text"><br>
+                <p>
+                    <label for="username">username:</label>  <input type="text" id="username"><br>
+                    <label for="password">password:</label>  <input type="text" id="password"><br>
+                </p>    
+                <!--In the above code the data that given by the useris cannot differentiate by the server use the name attribute to differentiate them-->
+                <p>
+                    <label for="user">username:</label>  <input type="text" id="user" name="username"><br>
+                    <label for="pw">password:</label> <input type="text" id="pw" name="pwd"><br>
+                </p>
+                <p>
+                    <input type="text" name="username" placeholder="enter the username"><br>
+                    <input type="text" name="pwd" placeholder="enter the password"><br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><h3>Size and maxlength:</h3></legend>
+                <p>
+                    <label for="name">username:</label> <input type="text" name="username" id="name" size="7" maxlength="25" value="admin"><br>
+                    <!--to hide the typing password use the password attribute value as password-->
+                    <label for="pass">password:</label> <input type="password" name="pwd" id="pass" size="7" maxlength="7"><br>
+                </p>
+                
+                <p>
+                    <label for="feedback">message:</label>  <br>
+                    <textarea name="comments" id="feedback" cols="30" rows="10"  placeholder="enter your comments"></textarea>
+                </p>
+
+                <p>
+                    <h3>Button:</h3>
+                    <input type="submit" name="host" value="submit">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>Checkbox:</h3></legend>
+                <p>
+                    <label>gender:</label>  <br>
+                    <input type="radio" name="gender" value="male" checked>male
+                    <input type="radio" name="gender" value="female">female
+                </p>
+                <p>
+                    <label>multiple choice:</label>  <br>
+                    <input type="checkbox" name="learn[]" value="html">html <br>
+                    <input type="checkbox" name="learn[]" value="css">css <br>
+                    <input type="checkbox" name="learn[]" value="js">js <br>
+                </p>
+                <p>
+                    <label>drop down menu:</label>  <br>
+                    <select name="course" id="course">
+                        <option value=" - ">select course</option>
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="js">js</option>
+                    </select><br>
+                    <label>selected default drop down menu:</label>  <br>
+                    <select name="course" id="course">
+                        <option value="nil">select course</option>
+                        <option value="html">html</option>
+                        <option value="css"selected>css</option>
+                        <option value="js">js</option>
+                    </select><br><br>
+                    <!--in multi choice dropdown menu "default size is 4"-->
+                    <label>multi choice dropdown menu:</label>  <br>
+                    <select name="course" id="course"multiple>
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="js">js</option>
+                        <option value="py">python</option>
+                        <option value="react">React</option>
+                        <option value="node.js">Node.js</option>
+                    </select>
+                    <br>
+                    <select name="course" id="course"multiple size="3">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="js">js</option>
+                        <option value="py">python</option>
+                        <option value="react">React</option>
+                        <option value="node.js">Node.js</option>
+                    </select>
+                    <br>
+
+                    <!--for unable persons don't want to click on the point just click the word-->
+                    gender: <br>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">male</label> 
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">female</label> 
+                    <br>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>upload file:</h3></legend>   
+                <p>   
+                    <!--upload files-->
+                    <p>
+                        <label>upload file:</label> <br>
+                        <input type="file" name="uploading file name">
+                    </p>
+                    <br>
+                </p>  
+            </fieldset>
+            <div id="input-atribute">
+            <fieldset>
+                <legend><h3>HTML5 emil,number attribute:</h3></legend>  
+                <p>
+                    <label for="email">
+                        Email:<input type="email" name="emailid" id="email">
+                    </label>
+                    <br>
+                    <label for="emailnn">
+                        Email(null value is invalide):<input type="email" name="emailnn" id="emailnn" required> 
+                    </label>
+                    <br>
+                    <br>
+
+                    <label for="age">Age:</label> <input type="number" id="age" value="age" min="20" max="60" required>
+                    <br>
+                    <label for="dob">DOB:</label> <input type="date" id="dob" value="dob" required>        
+                    <br>
+                    <label for="weeks">perfered week:</label> <input type="week" name="weeks" id="weeks">
+                    <br>
+                    <label for="time">time:</label> <input type="time" name="time" id="time">
+                    <br>
+                    <br> 
+                    <label for="rate">Select value range:</label>
+                    <input type="range" name="rate" id="rate" min="0" max="1000" step="10">
+                    <br>
+                    <label for="link">site url:</label>
+                    <input type="url" name="link" id="link">
+                    <br>
+                    <br>
+                    <input type="submit" value="verify">
+                </p>
+            </fieldset>
+        </div>
+            <fieldset>
+                <p>
+                    <label for="find">search:</label>
+                    <input type="search" name="find" id="find">
+                </p>
+            </fieldset>
+        <div class="video">
+            <fieldset>
+                <legend><h3>Streaming videoon our site:</h3></legend>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/MLsU0WF_pvw"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </fieldset>
+        </div>
+            <div id="location">
+                <fieldset>
+                    <legend><h3>map location:</h3></legend>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.504997224551!2d76.94729127491122!3d11.000686589162049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85910f356f579%3A0x75aecc0d4bbaa978!2sGandhi%20Park!5e0!3m2!1sen!2sin!4v1678467461558!5m2!1sen!2sin" 
+                    width="600"
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </fieldset>
+            </div>
+            <div id="music">
+                <fieldset>
+                    <legend><h3>Audio:</h3></legend>
+                    <h4>see inside you(mp3):</h4>
+                    <audio src="simba.mp3" controls>not supported mp3</audio><br>
+                    <h4>see inside you(wav):</h4>
+                    <audio src="simba.wav" controls>not supported wav</audio>
+                    <h4>audio multiple formats</h4>
+                    <audio controls>
+                        <source src="simba.wav" type="audio/wav" />
+                        <source src="simba.mp3" type="audio/mp3" />
+                    </audio>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend><h3>video:</h3></legend>
+                    <p class="video">
+                    <video src="move on.mp4" controls width="250">
+                    the file format is not supported
+                    </video>
+                    </p>
+                    <!--as same like audio this video tag also allow multiple formate-->
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend><h3>iframe:</h3></legend>
+                    <!-- You sing this high frame tag we can insert a web page inside every page -->
+                    <iframe src="https://www.zoho.com/" height="200" width="300" title="zoho"></iframe>
+                </fieldset>
+            </div>
+        </form>
+        </p>
+        <br>
+        <div class="sticky-pos"><a href="C:\Users\Sriram B\Desktop\html_works\positions\sticky-pos.html"><input type="submit" value="sticky pos-pro"> </a></div>
+    </body>
+</html>

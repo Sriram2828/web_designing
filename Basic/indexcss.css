@@ -1,0 +1,303 @@
+/*selectors*/
+/*tag selector*/
+
+h1,h2,h3{
+    color: rgb(250, 128, 152);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+body{
+    background-color: rgb(114, 126, 127) ;
+    color: black ;
+    background-image: url(crack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+    background-attachment: fixed;
+}
+#mid{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(44, 205, 246);
+    background-color: rgb(1, 12, 113);
+    padding: 30px;
+    border: dashed rgb(151, 250, 247);
+    background-image: url(bgimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: padding-box;
+    text-align: justify;
+    text-indent: 50px;
+}
+#clip{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: transparent;
+    background-image: url(background.jpg);
+    letter-spacing: 20px;
+    -webkit-background-clip: text;
+}
+a:hover{
+    color: darkturquoise;
+}
+
+
+/*class selector*/
+.para{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rebeccapurple;
+    font-size: 25px;
+}
+.b{
+    color: rgb(88, 170, 6);
+    font-variant: small-caps;
+    font-size: 22px;
+}
+.i{
+    color: darkgreen ;
+    font-variant: small-caps;
+    font-size: 22px;
+}
+.sub{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    text-decoration: none;
+    color:black
+}
+#sample-btn{
+    border-radius: 5px;
+}
+.str{
+    color:rgb(244, 110, 219);
+}
+#gotoforms{
+    border-radius: 5px;
+}
+#gotoforms:hover{
+    background-color: rgb(100, 221, 255);
+}
+/*GRADIENT*/
+.linear-gradient{
+    height: 300px;
+    width: 350px;
+    padding: 25px;
+    background: linear-gradient(var(--gradient-2));
+    background: linear-gradient(var(--gradient-3));
+    background: linear-gradient(to top,var(--gradient-2));
+    background: linear-gradient(to left,var(--gradient-2));
+    background: linear-gradient(to right,var(--gradient-2));
+
+    background: linear-gradient(to bottom right,var(--gradient-2));
+    background: linear-gradient(to bottom left,var(--gradient-2));
+    background: linear-gradient(to top left,var(--gradient-2));
+    background: linear-gradient(to top right,var(--gradient-2));
+
+    background: linear-gradient(35deg,var(--gradient-3));
+    background: linear-gradient(-35deg,var(--gradient-3));
+}
+.repeating-linear-gradient{
+    height: 300px;
+    width: 350px;
+    padding: 25px;
+    background: repeating-linear-gradient(var(--gradient-3));
+    background: linear-gradient(#FF98FF,#7654fc 20%,#15045A 35%);
+    background: linear-gradient(to right,#FF98FF,#7654fc 20%,#15045A 35%);
+}
+.radial-gradient{
+    height: 300px;
+    width: 350px;
+    padding: 25px;
+    background: radial-gradient(var(--gradient-3));
+    background: radial-gradient(#FF98FF 30%,#7654fc 20%,#15045A 50%);
+    background: radial-gradient(var(--gradient-3));
+
+    /*x,y=50% 50%*/
+    background: radial-gradient(closest-side at 50% 50%,var(--gradient-3));
+    background: radial-gradient(closest-side at 30% 50%,var(--gradient-3));
+    background: radial-gradient(closest-side at 50% 30%,var(--gradient-3));
+    
+    background: radial-gradient(farthest-side at 50% 50%,var(--gradient-3));
+    background: radial-gradient(farthest-side at 20% 50%,var(--gradient-3));
+    background: radial-gradient(farthest-side at 50% 20%,var(--gradient-3));
+
+    background: radial-gradient(closest-corner at 20% 50%,var(--gradient-3));
+    background: radial-gradient(farthest-corner at 20% 50%,var(--gradient-3));
+}
+.repeating-radial-gradient{
+    height: 300px;
+    width: 350px;
+    padding: 25px;
+    background: repeating-radial-gradient(#FF98FF 5%,#7654fc 10%,#15045A 10%);
+}
+.conical-gradient{
+    height: 300px;
+    width: 350px;
+    padding: 25px;
+    border-radius: 50%;
+    background: conic-gradient(var(--gradient-3));
+    background: conic-gradient(from 58deg,var(--gradient-));
+    background: conic-gradient(at 60% 50%,var(--gradient-3));
+    background: repeating-conic-gradient(#FF98FF 10%,#7654fc 12%,#15045A 13%);
+}
+
+/*blend*/
+.blend{
+    width: 200px;
+    height: 300px;
+    border: #15045A;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgb(251, 214, 5),rgb(251, 8, 8)),url('peakpx.jpg');
+    background-size: cover;
+    background-blend-mode:normal;
+    background-blend-mode:screen;
+    background-blend-mode:overlay;
+    background-blend-mode:darken;
+    background-blend-mode:hard-light;
+    background-blend-mode:soft-light;
+    background-blend-mode:multiply;
+    background-blend-mode:color-burn;
+    background-blend-mode:difference;
+    background-blend-mode:exclusion;
+    background-blend-mode:hue;
+    background-blend-mode:color;
+    background-blend-mode:luminosity;
+    background-blend-mode:saturation;
+    opacity: 0.5;
+}
+/*id selector*/
+#bpara{
+    color: rgb(6, 170, 170);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#ipara{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#map{
+    color: black;
+    text-decoration: none;
+}
+
+/*pseudo selector*/
+#map:hover{
+    color: var(--hovercolor);
+}
+#map:active{
+    color: deeppink;
+}
+:root{
+    --hovercolor:chartreuse;
+    --gradient-3:#FF98FF,#7654fc,#15045A;
+    --gradient-2:#FF98FF,#15045A;
+}
+
+
+/*specila selectors*/
+
+/*child selector*/
+.childselector1 p{
+    color: #FF98FF;
+}
+/*to access the direct child(immediate child) use >*/
+.childselector2 > p{
+    color: aqua;
+}
+/*to access the adjustent(next  element)*/
+.childselector3 + p{
+    color: aqua;
+}
+/*attribute selector
+(~)this symbol is used if ther is multiple class name which have the 
+specific class name included with that the symbol will give 
+the prefered property to this used selector*/
+div[class~=innerchild1]{
+    background-color: rgb(1, 1, 76);
+}
+.in-child1{
+    background-color: #7654fc;
+}
+/**/
+p + a{
+    font-weight: bold;
+    font-size: 15px;
+}
+p + a:hover{
+    color: chartreuse;
+}
+
+ol >li,li > a{
+    color: rgb(216, 233, 70);
+    list-style-position: inside;
+    list-style-position: outside;/*default*/
+    
+}
+li > a:hover{
+    color: rgb(17, 27, 143);
+}
+
+ul li{
+    color: rgb(2, 2, 57);
+    list-style-type: none;
+}
+ul li::before{
+    content: '';
+    display: inline-block;
+    margin-right: 15px;
+    height: 15px;
+    width: 15px;
+    background-image: url(boom.png);
+    background-size: cover;
+}
+
+/*attribute selector*/
+p[id="br"]{
+    color: coral;
+} 
+li[class="Unordered"]{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(176, 0, 35);
+}
+/* ^-starting in the path, *-any wher in the path, $-end of the path*/
+img[src*="marco_diaz.jpg"]{
+    border: 10px solid rgb(2, 2, 102);
+}
+
+/*whitespace attribute*/
+p[class~=sample-para]{
+    color: rgb(30, 1, 59);
+}
+.ram{
+    box-shadow: 5px 5px 2px 5px rgba(0,0, 0, 0.4);/*box-shadow: horizontal-option vertical-opt blur-radius spread-value*/
+}
+.border-radius{
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    border-radius: 0 10px 0 10px;/*top right bottom left*/
+    background-color: rgba(0, 255, 191, 0.6);/*red green blue alpha(transperency)*/
+}
+/*box model
+{margin{border{padding{content}}}}*/
+.boxmodel{
+    height: 150px;
+    width: 400px;
+    text-align: justify;
+    background: #7654fc;
+    color: black;
+    /*box model*/
+    margin: 50px;/*give space on outside the box*/
+    border: 5px double white;/*between the margin and paddinng*/
+    padding: 10px;/*give space on inside the box*/
+}
+
