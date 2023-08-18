@@ -39,8 +39,8 @@
 */
 
 /*static-default position property in the browser*/
-.continer{
-}    
+/* .continer{
+}     */
 .static1{
     position: static;
 }
@@ -51,8 +51,8 @@
     position: static;
 }
 /*relative-use the ltrb to position the item*/
-.continer{
-}    
+/* .continer{
+}     */
 .relative1{
     position: relative;/*we can keep any where in the box*/
     left: 100px;
@@ -86,11 +86,11 @@ use the ltrb to position the item */
     right: 60px;
     bottom: 30px;
 }
-.absolute3{
-}   
+/* .absolute3{
+}    */
 /*fixed-we can keep the item fixed anywhere in the page*/
-.continer{
-}    
+/* .continer{
+}     */
 .fixed1{
     position: fixed;
     left: 200px;
