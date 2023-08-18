@@ -1,0 +1,111 @@
+.continer{
+    border: 5px solid black;
+    width: 400px;
+    height: 400px;
+}
+.box{
+    width: 80px;
+    height:80px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.box1{
+    background-color: deeppink;
+}
+.box2{
+    background-color: darkblue;
+}
+.box3{
+    background-color: darkgreen;
+}
+#sticky{
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/*position properties*/
+/*
+1.static
+2.relative(left top right bottom)
+3.absolute(ltrb),(relative)
+4.fixed
+5.sticky
+*/
+
+/*static-default position property in the browser*/
+.continer{
+}    
+.static1{
+    position: static;
+}
+.static2{
+    position: static;
+}
+.static3{
+    position: static;
+}
+/*relative-use the ltrb to position the item*/
+.continer{
+}    
+.relative1{
+    position: relative;/*we can keep any where in the box*/
+    left: 100px;
+    top: 50px;
+}
+.relative2{
+    position: relative;/*we can keep any where in the box*/
+    right: 10px;
+    bottom: 50px;
+
+}
+.relative3{
+    position: relative;/*we can keep any where in the box*/
+    left: 100px;
+    top: 100px;
+}
+/*absolute- allows you to literally place any page element exactly where you want it. 
+use the ltrb to position the item */
+.continer{
+    position: relative;/*this is use to put an barier to the container
+    only inside the container we an position the item anywhere as our 
+    convinence*/
+}    
+.absolute1{
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+.absolute2{
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+}
+.absolute3{
+}   
+/*fixed-we can keep the item fixed anywhere in the page*/
+.continer{
+}    
+.fixed1{
+    position: fixed;
+    left: 200px;
+    top: 350px;
+    z-index: 1;/*this z index is used to prioritice the item */
+}
+.fixed2{
+    position: fixed;
+    left: 230px;
+    top: 360px;
+    z-index: 2;
+}
+.fixed3{
+    position: fixed;
+    right: 400px;
+    bottom: 270px;
+    z-index: 3;/*the greater the value higher the priority*/
+}    
