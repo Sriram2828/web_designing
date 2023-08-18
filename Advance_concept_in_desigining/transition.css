@@ -1,0 +1,30 @@
+/*transition:
+    1.transition property:[property name]
+    2.transition duration(occuring duration)    
+    3.transition delay(delay before occuring the property)
+    4.transition timing function(inbuild functions to do the occurance) 
+    5.transition[all duration timing-function delay ] (single line)*/
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+
+    transition-property: width, height, background;
+    transition-duration: 0.5s,1s,0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
+    
+    /*single line transition*/
+    transition: all 0.5s steps(2) 0.5s;
+    
+    /*use this websit for generating timing functions (https://cubic-bezier.com/)*/
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.13,.54,.93,1.31);
+    transition-delay: 0.2s;
+}
+.box:hover{
+    width: 250px;
+    height: 250px;
+    background: rgb(135, 229, 233);
+    /*we can give all property to this transition property*/
+}

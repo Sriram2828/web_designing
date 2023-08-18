@@ -1,0 +1,419 @@
+body{
+    margin: 40px;
+    background-color: crimson;
+}
+/*row [default]*/
+.container1{
+    height: auto;
+    width: auto;
+    border: 5px solid black;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;/*or don't put nothing it is default as row*/
+}
+.item1{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+}
+.item2{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+.item3{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(246, 255, 0);
+}
+
+/*row-reverse*/
+.container2{
+    height: auto;
+    width: auto;
+    border: 5px solid black;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+.item11{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+}
+.item12{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+.item13{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(246, 255, 0);
+}
+
+
+/*column*/
+.container3{
+    height: auto;
+    width: auto;
+    border: 5px solid black;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+.item21{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+}
+.item22{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+.item23{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(246, 255, 0);
+}
+
+/*column-reverse*/
+.container4{
+    height: auto;
+    width: auto;
+    border: 5px solid black;
+    background-color: black;
+}
+.item31{
+    margin: 10px;
+    height: 80px; 
+    width: 80px;
+    background-color: aqua;
+}
+.item32{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+.item33{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(246, 255, 0);
+}
+.container4{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+/*flex wrap
+    1.nowrap[default]
+    2.wrap
+    3.wrap-reverse*/
+.wrap1{
+    width: 100px;
+    height: auto;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.wrap2{
+    width: 100px;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrap3{
+    width: 100px;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.box{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+
+
+/*Justify-content*/
+.content1{
+    width: auto;
+    height: auto;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content:flex-start;
+}
+.content2{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content:flex-end;
+}
+.content5{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content:center;
+}
+.content3{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content:space-between;
+}
+.content4{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content:space-around;
+}
+.flex-just{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+
+
+/*align-content
+ we can also use the "space-around" and "space-between" property*/
+.content1a{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:flex-start;
+}
+.content2a{
+    width: 400px;
+    height: 400px;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:flex-end;
+}
+.content3a{
+    width: 400px;
+    height: 400px;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:center;
+}
+.content4a{
+    width: 400px;
+    height: 400px;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:baseline;
+}
+.content5a{
+    width: 400px;
+    height: 400px;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:stretch;
+}
+.flex-align{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+
+/*item order
+    if we mention only one item then the item will move to the very end position*/
+.order-container{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+
+}
+.box{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+.flex-order-1:nth-child(1){
+    order: 3;
+}
+.flex-order-2:nth-child(2){
+    order: 5;
+}
+.flex-order-3:nth-child(3){
+    order: 1;
+}
+.flex-order-4:nth-child(4){
+    order: 2;
+}
+.flex-order-5:nth-child(5){
+    order: 4;
+}
+
+
+/*Align-self*/
+.align-self-container{
+    width: 600px;
+    height: 400px;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+}
+.box-align{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+}
+.align-self-1:nth-child(1){
+    align-self: stretch;
+}
+/*default*/
+ /* .align-self-2:nth-child(2){
+    align-self: ;
+} */
+.align-self-3:nth-child(3){
+    align-self: flex-end;
+}
+.align-self-4:nth-child(4){
+    align-self: flex-start;
+}
+.align-self-5:nth-child(5){
+    align-self: center;
+}
+
+
+/*flex grow*/
+.flex-grow{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+}
+.grow{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+    display: flex;
+}
+/* .grow:nth-child(1){
+    flex-grow: ;
+} */
+.grow:nth-child(2){
+    flex-grow: 2;
+}
+
+/* Responsive flexbox adjust towards the size of the web page */
+.cover{
+    height: auto;
+    width: auto;
+    border: 5px solid rgb(132, 254, 132);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.obj{
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+    background-color: chartreuse;
+}
+
+
+/*flex shrink
+.flex-shrink{
+    width: auto;
+    height: auto;
+    border: 5px;
+    border: 5px solid black;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: row;
+}
+.shrink{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(0, 255, 55);
+    text-align: center;
+    flex-shrink: 1;
+}
+.shrink:nth-child(2){
+    flex-shrink: 3;
+}
+*/
+
+
+ 
+
