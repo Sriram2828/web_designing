@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Dancing+Script:wght@600;700&family=Noto+Sans+JP:wght@500&family=Pacifico&family=Rubik&display=swap');
+
+body{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: rgb(111, 110, 110);
+    background-color: #050A30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name1{
+    color: white;
+    text-shadow: 0 0 5px #ff83c9,0 0 20px #ff83c9, 0 0 50px #ff83c9,0 0 100px #ff83c9;
+}
+
+.name2:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 5px #00eaff,0 0 20px #00eaff, 0 0 50px #00eaff,0 0 100px #00eaff;
+    transition: 1s;
+}
+
+.name3{
+    cursor: pointer;
+    color: white;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {
+    from{
+        color: white;
+    }
+    to{
+        text-shadow: 0 0 5px hwb(123 0% 0%),0 0 20px hwb(123 0% 0%), 0 0 50px hwb(123 0% 0%),0 0 100px hwb(123 0% 0%);
+    }
+}
+
+
+.name4{
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 5px linear-gradient(90deg, rgba(255,31,157,1) 0%, rgba(237,133,242,1) 48%, rgba(112,240,242,1) 100%),
+    0 0 25px linear-gradient(90deg, rgba(255,31,157,1) 0%, rgba(237,133,242,1) 48%, rgba(112,240,242,1) 100%),
+    0 0 50px linear-gradient(90deg, rgba(255,31,157,1) 0%, rgba(237,133,242,1) 48%, rgba(112,240,242,1) 100%),
+    0 0 100px linear-gradient(90deg, rgba(255,31,157,1) 0%, rgba(237,133,242,1) 48%, rgba(112,240,242,1) 100%);
+    background-size: 400% 400%;
+    animation: change 5s ease infinite;
+    
+}
+@keyframes change {
+        0%{
+            text-shadow: 0%;
+        }
+        50%{
+            text-shadow: 100%;
+        }
+        100%{
+            text-shadow: 0%;
+        }
+}

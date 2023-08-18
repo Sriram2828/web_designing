@@ -1,0 +1,42 @@
+
+/* Use this website for gradient colours: https://mycolor.space/gradient 
+To get box shadow use this website: https://getcssscan.com/css-box-shadow-examples */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, #d16ba5, #c37bbf, #b08bd3, #9a9ae1, #86a8e7);
+    background-size: 400% 400%;
+    animation: animatebg 5s ease infinite;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+div{
+    height: 200px;
+    width: 250px;
+    background-color: palevioletred;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+
+}
+div h2{
+    text-align: center;
+    padding-top: 78px;
+}
+
+@keyframes animatebg{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}

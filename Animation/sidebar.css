@@ -1,0 +1,103 @@
+:root{
+    --lightbackground: rgb(0, 62, 132);
+    --darkbackground: rgb(4, 2, 70);
+    --fontcolorlight: white;
+    --fontcolorsidebar: rgb(109, 187, 243);
+    --sidebarecolor: rgb(30, 30, 121);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fontcolorlight);
+}
+body{
+    background-color: var(--lightbackground);
+    margin-top: 50px;
+}
+.content{
+    padding: 10px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--darkbackground);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header button{
+    width: 50px;
+    flex-shrink: 0;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bar{
+    width: 100%;
+    height:  3px;
+    background-color: var(--fontcolorlight);  
+    
+}
+
+.pages{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 250px;
+    background-color: var(--sidebarecolor);
+}
+.pages .page{
+    color: var(--fontcolorsidebar);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.page.active, .page:hover{
+    color: azure;
+    background-color: var(--lightbackground);
+}
+.pages{
+    transform: translate(-250px);
+    transition: 0.5s;
+}
+
+.open .pages{
+    transform: translate(0px);
+}
+.restarea{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.open .restarea{
+    visibility: visible;
+    opacity: 1;
+}

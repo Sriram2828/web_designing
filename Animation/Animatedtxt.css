@@ -1,0 +1,48 @@
+/* Use this website for gradient colours: https://mycolor.space/gradient */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@500&family=Rubik&display=swap');
+                             
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C1559;
+}
+
+.txt{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+body .txt{
+    background: rgb(255,31,157);
+    background: linear-gradient(90deg, rgba(255,31,157,1) 0%, rgba(237,133,242,1) 48%, rgba(112,240,242,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 500% 500%;
+    animation: animatingtxt 5s ease infinite;
+}
+
+@keyframes animatingtxt{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}

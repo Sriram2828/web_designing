@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@500&family=Rubik&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 218, 221);
+}
+
+.checkbox{
+    color: white;
+    background-color: rgb(130, 130, 130);
+    font-family: 'Barriecito', cursive;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+input{
+    height: 35px;
+    width: 200px;
+    padding: 0 5px 0 5px;
+    color: rgb(130, 130, 130);
+    font-weight: bold;
+    background-color: rgb(133, 218, 221);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+input:placeholder-shown{
+    font-weight: bold;
+}
+
+input:invalid{
+    background-color: rgb(255, 19, 19);
+    border: 2px solid rgb(255, 19, 19);
+    animation: shake 0.2s 3;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
