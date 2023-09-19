@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User data validation</title>
+</head>
+<body>
+    <form name="val_form" action="#" onsubmit="return validation()">
+        <label for="uname">Username: </label>
+        <input type="text" name="uname"><br>
+        <label for="Email">Email ID: </label>
+        <input type="email" name="Email"><br>
+        <label for="regno">Register number: </label>
+        <input type="number" name="regno"><br>
+        <label for="pwd">Password: </label>
+        <input type="password" name="pwd"><br>
+        <label for="conpwd">Conform password: </label>
+        <input type="password" name="conpwd"><br>
+        <input type="submit">
+    </form>
+    <script>
+        function validation(){
+            // Variable declarationn
+            var username = document.val_form.uname.value;
+            var email_id = document.val_form.Email.value;
+            var register_num = document.val_form.regno.value;
+            var passwd = document.val_form.pwd.value;
+            var conform_passwd = document.val_form.conpwd.value;
+            
+            // Validation checking
+            if (username == null || username == "") {
+                if (passwd.length<10) {
+                    alert("User name should not be empty \n Password should be less than 10 characters");
+                }
+                if (passwd == conform_passwd) {
+                    alert("User name should not be empty \n ");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
