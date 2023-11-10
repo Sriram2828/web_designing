@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <!-- frontend layout -->
+    <h1>Guess the number</h1>
+    <input type="number" min="0" max="10" id="guess" />
+    <button onclick="check()">check</button>
+    <p id="result">Result</p>
+    <p>Your score: <span>10</span></p>
+
+    <script>
+      //   creating a function for checking the players guess
+      function check() {
+        // Initialising the variables
+        var playerGuess = Number(document.getElementById("guess").value);
+        var score = document.querySelector("span"); // querySelector() is function that takes first value based on the input
+        var sv = Number(score.textContent);
+        var roundResult = document.getElementById("result");
+        //Generating the random number
+        var randomValue = Math.random(); //Math.random() is to generate the random number (it will be in float [0.1 - 0.9])
+        var randomNumber = Math.floor(randomValue * 10) + 1; //Math.floor() is to eliminate the decimal points
+        //check and give the result
+        if (randomNumber == playerGuess) {
+          if (sv <= 10 && sv >= 0) {
+            sv += 1;
+            score.textContent = sv;
+          } else {
+            score.textContent = sv;
+          }
+          roundResult.textContent = "You are correct!";
+        } else {
+          alert(randomNumber);
+          if (sv <= 10 && sv >= 1) {
+            sv -= 1;
+            score.textContent = sv;
+          } else {
+            score.textContent = sv;
+          }
+          roundResult.textContent = "You are wrong!";
+        }
+      }
+    </script>
+  </body>
+</html>

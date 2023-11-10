@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+
+    <h1 id="title">Hello world</h1>
+    <hr />
+    <input id="num1" type="number" min="0"/>
+    <input id="num2" type="number" min="0"/>
+    <button onclick="addition()">add</button> 
+    <p id="ans">result</p>
+    <hr />
+
+
+    <script>
+      // changing the text content
+      //document.write(document.getElementById("title").textContent);
+      var text = document.getElementById("title");
+      text.textContent = "bye world";
+
+      // adding two input values
+      function addition() {
+        var n1 = document.getElementById("num1");
+        var n2 = document.getElementById("num2");
+        var v1 = Number(n1.value); //Number function will convertes the string into integers
+        var v2 = Number(n2.value);
+        var sum = v1 + v2;
+        document.getElementById("ans").innerHTML = sum;
+      }
+
+    </script>
+  </body>
+</html>
