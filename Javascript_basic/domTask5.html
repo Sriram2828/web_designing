@@ -1,0 +1,24 @@
+<style>
+  h1 {
+    cursor: pointer;
+  }
+</style>
+
+<h1 onclick="erase(event)">One</h1>
+<h1 onclick="erase(event)">two</h1>
+<h1 onclick="erase(event)">three</h1>
+<h1 onclick="erase(event)">four</h1>
+<h1 onclick="erase(event)">five</h1>
+<h1 onclick="erase(event)">six</h1>
+<h1 onclick="erase(event)">seven</h1>
+<h1 onclick="erase(event)">eight</h1>
+<h1 onclick="erase(event)">nine</h1>
+<h1 onclick="erase(event)">ten</h1>
+
+<script>
+  var element = document.getElementsByTagName("h1");
+
+  function erase(event) {
+    event.target.remove(); //this remove() will remove the specified tag element
+  }
+</script>

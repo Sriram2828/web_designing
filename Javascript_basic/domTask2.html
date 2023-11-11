@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM task2</title>
+  </head>
+  <body>
+    <button onclick="repeat()">addline</button>
+    <div id="textcontent"></div>
+    <script>
+      var space = document.getElementById("textcontent");
+      var line = prompt("enter the sentence you want to say:"); //get input from the user
+      function repeat() {
+        var tags = document.createElement("h1"); //will create a new element
+        tags.textContent = line;
+        space.append(tags); //append the new elements that created
+      }
+    </script>
+  </body>
+</html>

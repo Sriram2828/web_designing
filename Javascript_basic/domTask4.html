@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM task4</title>
+  </head>
+  <body>
+    <h1 id="screen">Name</h1>
+    <button onclick="display(event)">Sriram</button>
+    <button onclick="display(event)">Sri</button>
+    <button onclick="display(event)">Ram</button>
+
+    <script>
+      var displayName = document.getElementById("screen");
+      function display(event) {
+        displayName.textContent = event.target.textContent; //this event.target property will give all the detials about the tage elements
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM task1</title>
+  </head>
+  <body>
+    <input id="transferText" onkeyup="say()" /> <!--this onkeyup(): event occurs when the user releases a key on the keyboard -->
+    <!-- <button>print</button> -->
+    <h1 id="disp"></h1>
+
+    <script>
+      var content = document.getElementById("transferText");
+      var displays = document.getElementById("disp");
+      function say() {
+        displays.textContent = content.value;
+      }
+    </script>
+  </body>
+</html>
