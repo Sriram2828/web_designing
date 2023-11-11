@@ -1,0 +1,22 @@
+<!-- append, prepend and insertadjacentHTML -->
+<div>
+  <h1>default value</h1>
+</div>
+
+<script>
+  var div = document.querySelector("div");
+  div.append("appended value:Ram"); //inserting at the last
+  div.prepend("prepended value:Sri"); //inserting at the front
+  var h1 = document.createElement("h1");
+  var h2 = document.createElement("h2");
+  var h3 = document.createElement("h3");
+  var h4 = document.createElement("h4");
+  h1.textContent = "afterbegin: inserted value";
+  h2.textContent = "afterend: inserted value";
+  h3.textContent = "beforebegin: inserted value";
+  h4.textContent = "beforeend: inserted value";
+  div.insertAdjacentElement("afterbegin", h1);
+  div.insertAdjacentElement("afterend", h2);
+  div.insertAdjacentElement("beforebegin", h3);
+  div.insertAdjacentElement("beforeend", h4);
+</script>
