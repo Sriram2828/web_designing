@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends details</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(117, 196, 196);
+      }
+      table,
+      th,
+      td {
+        border: 2px solid rgb(117, 196, 196);
+      }
+      table td #saveBtn {
+        width: 30.5vh;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <!-- frontend -->
+  <body>
+    <div class="container">
+      <h1>Friends details</h1>
+      <div class="friendDetials">
+        <table>
+          <tr>
+            <th>Name</th>
+            <td><input type="text" id="fName" /></td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td><input type="number" min="5" id="age" /></td>
+          </tr>
+          <tr>
+            <th>Gender</th>
+            <td name="genderDetails" id="genderDetails">
+              <input type="radio" value="Male" name="gender" />Male
+              <input type="radio" value="female" name="gender" />female
+            </td>
+          </tr>
+          <tr>
+            <th>Rating</th>
+            <td>
+              <input
+                id="rating"
+                type="range"
+                min="0"
+                max="10"
+                value="0"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>0</output>
+            </td>
+          </tr>
+          <tr>
+            <th>Email Id</th>
+            <td><input type="email" id="mailid" /></td>
+          </tr>
+          <td colspan="2">
+            <button id="saveBtn" onclick="insertData()">Save</button>
+          </td>
+        </table>
+      </div>
+      <br />
+      <div class="dataBaseTable">
+        <table id="dataTable">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Rating</th>
+            <th>Email Id</th>
+            <th>No more</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <!-- backend -->
+  <script>
+    var friendName = document.getElementById("fName").value;
+    var age = document.getElementById("age").value;
+    var friendsGender = document.getElementByName("gender");
+    document.genderDetails.onclick = function () {
+      var genderid = document.querySelector(
+        "input[name = gender]:checked"
+      ).value;
+    };
+    function click() {
+      alert(genderid);
+    }
+
+    function insertData() {}
+  </script>
+</html>
