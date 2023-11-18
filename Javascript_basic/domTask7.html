@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+  </head>
+  <body>
+    <input type="text" id="date" /><br /><br />
+    <button onclick="display1()">display date</button>
+    <button onclick="display2()">time and day</button>
+
+    <script>
+      var screen = document.getElementById("date");
+      var today = new Date(); //computes the date
+      //for the first question
+      function display1() {
+        screen.value = today.getDate(); //display the date in the textbox
+      }
+      //for the second question
+      function display2() {
+        var time = today.toLocaleTimeString(); // computes the time
+        var day = today.toLocaleDateString("en-US", { weekday: "long" }); //computes the day
+        var dayTime = `${day} - ${time}`;
+        screen.value = dayTime;
+      }
+    </script>
+  </body>
+</html>
