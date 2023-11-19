@@ -1,6 +1,6 @@
 <?php
 // Variable declaration
-$name = $email = $gender = $comment = $website = "";
+$firstname = $lastname = $email = $gender = $comment = $website = "";
 
 // initialising the value to the variable
 if (isset($_POST['submit'])) {
