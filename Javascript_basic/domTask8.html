@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Over/Out Event</title>
+    <style>
+      #original-text {
+        cursor: pointer;
+      }
+
+      #new-image {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="original-text">Place the mouse here</p>
+
+    <img
+      id="new-image"
+      src="https://i.pinimg.com/236x/27/f0/26/27f026b3110efa9df34ffa41bdcb5879.jpg"
+    />
+
+    <script>
+      const originalText = document.getElementById("original-text");
+      const newImage = document.getElementById("new-image");
+      function mouseOn() {
+        originalText.style.display = "none";
+        newImage.style.display = "block";
+      }
+
+      function mouseOff() {
+        originalText.style.display = "block";
+        newImage.style.display = "none";
+      }
+      originalText.addEventListener("mouseover", mouseOn);
+      originalText.addEventListener("mouseout", mouseOff);
+    </script>
+  </body>
+</html>
