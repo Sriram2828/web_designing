@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Exam</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: auto;
+        margin-top: 190px;
+        width: 60%;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input[type="radio"] {
+        margin-top: 5px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="examForm" onsubmit="submitExam(event)">
+      <h2>Answer the questions</h2>
+
+      <label for="q1">1. Skeleton of the website</label>
+      <input type="radio" name="q1" value="a" /> html
+      <input type="radio" name="q1" value="b" /> js
+      <input type="radio" name="q1" value="c" /> css
+      <input type="radio" name="q1" value="d" /> php
+      <br />
+      <label for="q2"
+        >2. Server side programming language in web programming</label
+      >
+      <input type="radio" name="q2" value="a" /> python
+      <input type="radio" name="q2" value="b" /> php
+      <input type="radio" name="q2" value="c" /> js
+      <input type="radio" name="q2" value="d" /> c++
+      <br />
+      <label for="q3">3. For styling a web page we use</label>
+      <input type="radio" name="q3" value="a" /> js
+      <input type="radio" name="q3" value="b" /> css
+      <input type="radio" name="q3" value="c" /> xml
+      <input type="radio" name="q3" value="d" /> html
+      <br />
+      <label for="q4"
+        >4. Client signs scripting language in web programming</label
+      >
+      <input type="radio" name="q4" value="a" /> php
+      <input type="radio" name="q4" value="b" /> python
+      <input type="radio" name="q4" value="c" /> js
+      <input type="radio" name="q4" value="d" /> ruby
+      <br />
+      <button type="submit">Submit Exam</button>
+      <button onclick="reset()">Reset</button>
+    </form>
+
+    <script>
+      function submitExam(event) {
+        event.preventDefault();
+
+        var score = 0;
+
+        // Check answers
+        if (document.querySelector('input[name="q1"]:checked').value === "a") {
+          score++;
+        }
+
+        if (document.querySelector('input[name="q2"]:checked').value === "b") {
+          score++;
+        }
+
+        if (document.querySelector('input[name="q3"]:checked').value === "b") {
+          score++;
+        }
+
+        if (document.querySelector('input[name="q4"]:checked').value === "c") {
+          score++;
+        }
+
+        // Display the result in an alert box
+        alert("Your score: " + score + "/4");
+      }
+    </script>
+  </body>
+</html>
