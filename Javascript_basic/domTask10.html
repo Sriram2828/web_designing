@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial and Multiplication Table</title>
+  </head>
+  <body>
+    <script>
+      // Get input from the user
+      var inputNumber = parseInt(prompt("Enter a number:"));
+
+      // Validate if the input is a number
+      if (!isNaN(inputNumber)) {
+        // Calculate factorial
+        var factorialResult = calculateFactorial(inputNumber);
+
+        // Display factorial using alert
+        alert("Factorial of " + inputNumber + " is: " + factorialResult);
+
+        // Display multiplication table using alert
+        alert(
+          "Multiplication Table of " +
+            inputNumber +
+            ":\n" +
+            displayMultiplicationTable(inputNumber)
+        );
+      } else {
+        // Display an alert for invalid input
+        alert("Invalid input: Please enter a valid number");
+      }
+
+      // Function to calculate factorial
+      function calculateFactorial(number) {
+        if (number === 0 || number === 1) {
+          return 1;
+        } else {
+          return number * calculateFactorial(number - 1);
+        }
+      }
+
+      // Function to display multiplication table
+      function displayMultiplicationTable(number) {
+        var table = "";
+        for (var i = 1; i <= 10; i++) {
+          table += number + " X " + i + " = " + number * i + "\n";
+        }
+        return table;
+      }
+    </script>
+  </body>
+</html>
