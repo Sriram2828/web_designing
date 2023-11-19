@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <form action="retrive.php" method="post">
+      <div class="Details">
+        <h1>Registration form</h1>
+
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" required />
+        <br />
+
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" required />
+        <br />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Others" /> Others
+        <br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder="xxx...@gmail.com"
+          name="email"
+          required
+        />
+        <br />
+
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          placeholder="enter your password"
+          name="pwd"
+          required
+        />
+        <br />
+
+        <label for="confpwd">Confirm Password:</label>
+        <input
+          type="password"
+          placeholder="Retype your password"
+          name="confpwd"
+          required
+        />
+        <br />
+
+        <div>
+          <button name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
