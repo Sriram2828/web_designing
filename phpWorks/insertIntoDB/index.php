@@ -7,6 +7,7 @@
     <title>validation</title>
   </head>
   <body>
+    <!-- frontend -->
     <form action="index.php" method="post">
       <div class="Details">
         <h1>Student details</h1>
@@ -67,6 +68,7 @@
     </form>
   </body>
 </html>
+<!-- backend -->
 <?php
 include("connectdb.php");
 if(isset($_POST['submit'])){
