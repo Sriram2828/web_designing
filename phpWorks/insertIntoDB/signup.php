@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>signup</title>
   </head>
   <body>
     <!-- frontend -->
-    <form action="index.php" method="post">
+    <form action="signup.php" method="post">
       <div class="Details">
-        <h1>Student details</h1>
+        <h1>Registration details</h1>
 
         <label for="stdname">Student name:</label>
         <input type="text" placeholder="your name" name="stdname" required />
@@ -63,6 +63,11 @@
 
         <div class="btn">
           <input type="submit" name="submit" value="Insert details" />
+        </div>
+        <br />
+
+        <div>
+          <a href="login.php">have an account</a>
         </div>
       </div>
     </form>
