@@ -16,9 +16,7 @@
 .box2{
     background-color: darkblue;
 }
-.box3{
-    background-color: darkgreen;
-}
+
 #sticky{
     text-decoration: none;
     height: 50px;
@@ -103,9 +101,24 @@ use the ltrb to position the item */
     top: 360px;
     z-index: 2;
 }
+
+/* style for the admission button */
 .fixed3{
     position: fixed;
-    right: 400px;
-    bottom: 270px;
+    right: 0;
+    top: 200px;
     z-index: 3;/*the greater the value higher the priority*/
 }    
+.boxSize{
+    cursor: pointer;
+    width: 18px;
+    height: 166px;
+    color: white;
+    text-align: center;
+    margin: 1px;
+    padding: 12px;
+    border: solid 2px black;
+}
+.box3{
+    background-color: rgb(13, 188, 13);
+}
