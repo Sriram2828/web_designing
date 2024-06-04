@@ -103,22 +103,29 @@ use the ltrb to position the item */
 }
 
 /* style for the admission button */
-.fixed3{
+.fixed_adm_btn{
     position: fixed;
     right: 0;
-    top: 200px;
+    top: 270px;
     z-index: 3;/*the greater the value higher the priority*/
 }    
 .boxSize{
     cursor: pointer;
     width: 18px;
     height: 166px;
-    color: white;
     text-align: center;
     margin: 1px;
     padding: 12px;
-    border: solid 2px black;
 }
 .box3{
-    background-color: rgb(13, 188, 13);
+    background-color: rgb(49, 124, 49); 
+    border-radius: 10px 0 0 10px;
+    color: white;
+    border: solid 2px black;
+    text-decoration: none;
+}
+#admission_btn:hover{
+    transition: 1s;
+    color: black;
+    background-color: rgb(13, 212, 13);
 }
