@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+table{
+    border: 3px solid black;
+    height: 150px;
+    width: 200px;
+}
+th,td{
+    border: 3px solid black;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#travDet div{
+    padding: 5px;
+}

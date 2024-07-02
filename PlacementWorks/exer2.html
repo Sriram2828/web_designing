@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <form id="travelDetails">
+        <div>
+            <div>
+                <label for="fname">Name:</label>
+                <input type="text" name="fname" id="fname">
+            </div> 
+            <br>
+            <div>
+                <label for="place">Place:</label>
+                <input type="text" name="place" id="place">
+            </div>
+            <br>
+            <button type="submit">Insert</button>
+        </div>
+    </form>
+    <table id="dataTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Fav-Place</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <script>
+        document.getElementById('travelDetails').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const name = document.getElementById('fname').value;
+            const place = document.getElementById('place').value;
+
+            const table = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+            const newName = newRow.insertCell(0);
+            const newPlace = newRow.insertCell(1);
+
+            newName.textContent = name;
+            newPlace.textContent = place;
+
+            document.getElementById('travDet').reset();
+        });
+    </script>
+</body>
+</html>
