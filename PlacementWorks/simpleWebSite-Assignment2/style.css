@@ -3,7 +3,7 @@
     margin: 0;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 .about,.service,.product,.container{
     height: 100vh;
@@ -201,9 +201,16 @@ h2,form{
     background-color: #000000;
     color: white;
 }
+
+.submit-button:hover{
+    background-color: #838282;
+}
 .form-actions .cancel-button {
     background-color: #000000;
     color: white;
+}
+.cancel-button:hover{
+    background-color: #838282;
 }
 
 footer{
