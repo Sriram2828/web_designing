@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.about,.service,.product,.contact,.note{
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 1%;
+    background-color: rgb(3, 3, 136);
+    z-index: 3;
+}
+.logo{
+    padding: 0 5%;
+    cursor: pointer;
+    margin-right: auto;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.tabs{
+    margin-top: 15px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+}
+.tabs li{
+    padding: 10px 20px;
+    padding-bottom: 19px;
+}
+.tabs li a{
+    color: rgb(162, 152, 255);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.tabs li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.home{
+    height: 90vh;
+    width: 100vw;
+}
+.home img{
+    height: 90vh;
+    width: 100vw;
+}
+
+.about{
+    background-color: rgb(102, 229, 102);
+}
+.about h2{
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 45px;
+}
+.about .con-abo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.about .con-abo .abo{
+    height: 43vh;
+    width: 30vw;
+}
+.abo img{
+    height: 177px;
+    width: 289px;
+}
+
+.about .con-abo .abo-t{
+    height: 35vh;
+    width: 30vw;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 22px;
+    margin: 12px
+}
+.service{
+    background-color: rgb(4, 203, 217);
+}
+.service h2{
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 45px;
+}
+.service .con-serv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.service .con-serv .serv{
+    height: 35vh;
+    width: 19vw;
+}
+
+.serv img{
+    height: 177px;
+    width: 289px;
+}
+.service #Click{
+    text-align: end;
+    font-size: 39px;
+    padding: 30px;
+}
+#Click h3 a{
+    color: black;
+}
+
+.product{
+    background-color: rgb(243, 122, 225);
+}
+.product h2{
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 45px;
+}
+.product .con-prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.product .con-prod .prod{
+    height: 35vh;
+    width: 19vw;
+}
+.prod img{
+    height: 177px;
+    width: 289px;
+}
+.product #Click{
+    text-align: end;
+    font-size: 39px;
+    padding: 30px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    padding-bottom: 20;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.form-group label {
+    width: 100px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #1a1a1a;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-actions {
+    text-align: center;
+}
+.form-actions button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+.form-actions .submit-button {
+    background-color: #000000;
+    color: white;
+}
+.form-actions .cancel-button {
+    background-color: #000000;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(3, 3, 136);
+    color: rgb(255, 255, 255);
+}
