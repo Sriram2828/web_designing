@@ -5,7 +5,7 @@
 body {
     font-family: Arial, sans-serif;
 }
-.about,.service,.product,.contact,.note{
+.about,.service,.product,.container{
     height: 100vh;
     width: 100vw;
 }
@@ -70,12 +70,12 @@ header{
     padding-top: 5vh;
 }
 .about .con-abo .abo{
-    height: 43vh;
-    width: 30vw;
+    height: 40vh;
+    width: 21vw;
 }
 .abo img{
-    height: 177px;
-    width: 289px;
+    height: 192px;
+    width: 319px;
 }
 
 .about .con-abo .abo-t{
@@ -95,13 +95,17 @@ header{
     font-size: 45px;
 }
 .service .con-serv {
-    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: center; */
 }
 
 .service .con-serv .serv{
+    margin: 15px;
     height: 35vh;
     width: 19vw;
 }
@@ -113,7 +117,7 @@ header{
 .service #Click{
     text-align: end;
     font-size: 39px;
-    padding: 30px;
+    padding: 66px;
 }
 #Click h3 a{
     color: black;
@@ -128,12 +132,15 @@ header{
     font-size: 45px;
 }
 .product .con-prod {
-    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .product .con-prod .prod{
+    margin: 15px;
     height: 35vh;
     width: 19vw;
 }
@@ -144,7 +151,7 @@ header{
 .product #Click{
     text-align: end;
     font-size: 39px;
-    padding: 30px;
+    padding: 66px;
 }
 
 .container {
@@ -153,10 +160,14 @@ header{
     padding: 20px;
     border-radius: 5px;
 }
-h2 {
-    text-align: center;
-    padding-bottom: 20;
+h2{
+    font-size: 50px;
 }
+h2,form{
+    text-align: center;
+    padding-top: 75px;
+}
+
 .form-group {
     margin-bottom: 15px;
     display: flex;
@@ -199,7 +210,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding-bottom: 60px;
     background-color: rgb(3, 3, 136);
     color: rgb(255, 255, 255);
 }
