@@ -1,0 +1,62 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 31px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 14vh;
+}
+h2{
+    font-size: 50px;
+}
+h2,form{
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.form-group label {
+    width: 100px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #1a1a1a;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-actions {
+    text-align: center;
+}
+.form-actions button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+.form-actions .submit-button {
+    background-color: #1ec800;
+    color: rgb(0, 0, 0);
+}
+
+.submit-button:hover{
+    background-color: #99ff79;
+}
+.form-actions .cancel-button {
+    background-color: #fc4b44;
+    color: rgb(0, 0, 0);
+}
+.cancel-button:hover{
+    background-color: #ff9191;
+}
+input:focus{
+    background-color: aquamarine;
+}
