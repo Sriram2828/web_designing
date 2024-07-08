@@ -1,0 +1,40 @@
+.screen{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+.screen #element{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 30vw;
+    border-radius: 10px;
+}
+.screen #element .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+body{
+    background-color: rgb(211, 0, 0);
+}
+body .main{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    margin-top: 1vh;
+    color: white;
+    text-align: center;
+}
+img{
+    padding: 20px;
+    height: 20vh;
+    width: auto;
+}
