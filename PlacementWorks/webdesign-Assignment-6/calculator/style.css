@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: aqua;
+    height: fit-content;
+    width: fit-content;
+}
+table{
+    border: 3px solid aqua;
+    height: 150px;
+    width: 200px;
+    width: 30vw;
+}
+th,td{
+    background-color: white;
+    border: 3px solid aqua;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+h1{
+    color: white;
+}

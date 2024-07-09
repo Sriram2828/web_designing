@@ -60,7 +60,7 @@ p{
  height:150px;
  width:150px;
  margin:10px;
- position:static;
+ position:absolute;                     
 }
 .css {
     background-color: rgb(0, 64, 255);
@@ -76,5 +76,23 @@ p{
      height:150px;
      width:150px;
      margin:10px;
-     position:absolute;
+     position:static;
 }
+
+#of{
+    height: 10vh;
+    width: 30vh;
+    /* overflow: scroll; */
+    /* overflow: hidden; */
+    /* overflow: visible; */
+    overflow: auto;
+}
+img{
+    opacity: 0.5;
+}
+.space{
+    height: 15vh;
+    width: 15vh;
+    background-color: rgb(102, 184, 200);
+    transform: rotate(30deg);
+}                                                                                                                                                                           

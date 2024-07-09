@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    margin-top: 5vh;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    /* animation: change-color 1s ease-in-out 0.5s 100 ; */
+    animation-name: change-color;
+    animation-fill-mode: backwards;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes change-color {
+    0%{
+        background-color: rgb(255, 145, 0);
+        top: 20vh;
+        bottom: 20vh;
+        
+    }
+    20%{
+        background-color: rgb(255, 234, 0);
+        top: 30vh;
+        bottom: 30vh;
+    }
+    40%{
+        background-color: rgb(85, 255, 0);
+        top: 20vh;
+        bottom: 20vh;
+    }
+    60%{
+        background-color: rgb(0, 238, 255);
+        top: 20vh;
+        bottom: 20vh;
+    }
+    80%{
+        background-color: rgb(47, 0, 255);
+        top: 20vh;
+        bottom: 20vh;
+    }
+    100%{
+        background-color: rgb(255, 0, 81);
+        top: 20vh;
+        bottom: 20vh;
+    }
+}

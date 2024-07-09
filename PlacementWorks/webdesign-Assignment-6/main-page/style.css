@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body div{
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(195, 195, 195);
+    border-radius: 10px;
+    padding: 20px;
+    width: 30vw;
+}
+img{
+    height: 100px;
+    width: auto;
+}
