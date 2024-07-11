@@ -1,0 +1,45 @@
+body{
+    padding-top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 1vh;
+}
+.logo b{
+    color: #ff8f0f;
+}
+
+.checked {
+    color: orange;
+}
+.unchecked {
+    color: rgb(198, 198, 198);
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.first-check{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+#bgcolor{
+    background-color: rgb(209, 209, 209);
+}
+button{
+    background-color: #ff8f0f;
+    padding: 10px 140px 10px 140px;
+    margin: 5px;
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+}

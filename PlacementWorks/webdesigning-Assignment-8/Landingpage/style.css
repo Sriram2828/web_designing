@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner {
+    position: relative;
+    background-image: url('https://cdn5.vectorstock.com/i/1000x1000/50/79/banner-template-fashion-sales-vector-16485079.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.banner button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.category img {
+    width:500px;
+    height:500px;
+    border-radius: 10px;
+}
+
+.category h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
