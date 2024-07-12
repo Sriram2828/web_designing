@@ -1,0 +1,37 @@
+label{
+    font-weight: bold;
+}
+header{
+    width: 100vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-color: green;
+    color: white;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+.main{
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid black;
+    height: fit-content;
+    width: 70vw;
+}
+.main div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.two-input{
+    width: 387px;
+}
+#r{
+    display: flex;
+    flex-direction: column;
+}
