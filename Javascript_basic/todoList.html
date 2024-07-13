@@ -1,24 +1,34 @@
-<input type="text" id="todo" />
-<button onclick="insert()">Add to list</button>
-<ul id="list">
-  <li>
-    default
-    <button onclick="clearElement(event)">done</button>
-  </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="todo" />
+  <button onclick="insert()">Add to list</button>
+  <ul id="list">
+    <li>
+      default
+      <button onclick="clearElement(event)">done</button>
+    </li>
+  </ul>
 
-<script>
-  var todo = document.getElementById("todo");
-  var list = document.getElementById("list");
-  //for inserting the todo to the list
-  function insert() {
-    var li = document.createElement("li");
-    li.innerHTML =
-      todo.value + "<button onclick='clearElement(event)'>done</button>";
-    list.append(li); // will appent the newly created todo element in the list
-  }
-  //removing the work done
-  function clearElement(event) {
-    event.target.parentElement.remove(); //parentElement will include consider the parent tag
-  }
-</script>
+  <script>
+    var todo = document.getElementById("todo");
+    var list = document.getElementById("list");
+    //for inserting the todo to the list
+    function insert() {
+      var li = document.createElement("li");
+      li.innerHTML =
+        todo.value + "<button onclick='clearElement(event)'>done</button>";
+      list.append(li); // will appent the newly created todo element in the list
+    }
+    //removing the work done
+    function clearElement(event) {
+      event.target.parentElement.remove(); //parentElement will include consider the parent tag
+    }
+  </script>
+</body>
+</html>
