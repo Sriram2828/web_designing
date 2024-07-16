@@ -120,15 +120,26 @@ function agePeriod(age) {
 }
 console.log(agePeriod(15));
 
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person.fullName());
+
+// arrrow function  
+let square = (a,b) => a * b;
+console.log(square(10,9));
 
 
+// arrow fun with no parameters 
+let display = () => "this is done by a arrow";
+console.log(display);
 
-
-
-
-
-
-
-
-
-// 6.Write a function that takes a number as input and returns its factorial.
+// arrow fun using array methods
+let maxeleinarr = (arr) => Math.max(...arr);
+var arr = [1,5,8,3,6,4,5];
+console.log(maxeleinarr(arr));
