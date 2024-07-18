@@ -143,3 +143,52 @@ console.log(display);
 let maxeleinarr = (arr) => Math.max(...arr);
 var arr = [1,5,8,3,6,4,5];
 console.log(maxeleinarr(arr));
+
+document.getElementById("btn").addEventListener("click", function(){console.log("event",this)});
+
+const p1 = {
+    fname: "xxx",
+    lname: "yyy",
+    fullName: function(){
+        return this.fname+" "+this.lname;
+    }
+};
+console.log("call():",p1.fullName.call(p1));
+
+// class and objects
+class Car{
+    constructor(fn,ln){
+        this.fn = fn;
+        this.ln = ln;
+    }
+    getData(){
+        return this.fn+" "+this.ln;
+    }
+}
+const ppi = new Car("xxxx","yyy");
+console.log(ppi.getData());
+
+
+// sending the text to console
+let t = document.getElementById("screen");  
+function sendtocon(){
+    console.log(t.value);
+}
+
+// querySelector
+let q1 = document.querySelector("h1");
+console.log(q1.innerHTML);
+
+let q2 = document.getElementsByClassName("arr2");
+console.log(q2.value);
+
+function chco() {
+    document.getElementById("arr1").style.color="red";                   
+    document.getElementById("btn").style.background="red";
+    alert("button was clicked");
+}
+// console.log(typeof(NAN));
+
+function dbchco(){
+    document.getElementById("d").innerHTML = new Date();
+}
