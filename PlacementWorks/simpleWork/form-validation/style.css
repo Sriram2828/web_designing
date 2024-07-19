@@ -1,0 +1,80 @@
+
+/* Use this website for gradient colours: https://mycolor.space/gradient 
+To get box shadow use this website: https://getcssscan.com/css-box-shadow-examples */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right bottom, #d16ba5, #c37bbf, #b08bd3, #9a9ae1, #86a8e7);
+    background-size: 400% 400%;
+    animation: animatebg 5s ease infinite;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.con-main{
+    height: fit-content;
+    width: 30vw;
+    background-color: palevioletred;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+form div{
+    width: 18vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+input{
+    background: linear-gradient(to right bottom, #d16ba5, #c37bbf, #b08bd3, #9a9ae1, #86a8e7);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-size: 400% 400%;
+    animation: animatebg 5s ease infinite;
+    border-radius: 10px;
+    border: transparent;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+}
+input:focus{
+    outline: transparent;
+}
+
+button{
+    background: linear-gradient(to right bottom, #d16ba5, #c37bbf, #b08bd3, #9a9ae1, #86a8e7);
+    transition: 1s;
+    background-size: 400% 400%;
+    animation: animatebg 5s ease infinite;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    border: transparent;
+}
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@keyframes animatebg{                                                   
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
