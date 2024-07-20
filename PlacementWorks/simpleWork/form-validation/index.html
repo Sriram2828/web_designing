@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated background</title>
+    <title>validation forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="con-main">
+    <div class="main-container">
         <form>
             <h1>Validate</h1>
             <div>
-                <label for="email">Email:</label>
-                <input type="email" name="" id="email">
+                <label for="name">Name:</label>
+                <input class="input-style" type="text" name="" id="name" required>
             </div>
             <div>
-                <label for="pass">Password</label>
-                <input type="password" name="" id="pass" maxlength="15">
+                <label for="gender">Gender:</label>
+                <select name="gender" class="option-style" id="gender">
+                    <option value="Select">Select the gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
             </div>
-            <button onclick="validate()">Submit</button>
+            <div>
+                <label for="email">Email:</label> <input class="input-style" type="email" name="" id="email"
+                    placeholder="example123@gmail.com" required>
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input class="input-style" type="password" name="" id="pass" maxlength="15" required>
+            </div>
+            <div>
+                <input type="checkbox" required>
+                <label for="conform">I agree to all the details provided</label>
+            </div>
+            <div>
+                <button onclick="validate()">Submit</button>
+                <button onclick="reset()">reset</button>
+            </div>
         </form>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
