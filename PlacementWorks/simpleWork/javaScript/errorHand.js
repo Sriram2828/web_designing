@@ -62,3 +62,4 @@
 // let a1="! $ welcome to my message 2024";
 // let a2=/\d{1,4}/gm;
 // console.log(a1.match(a2));
+
