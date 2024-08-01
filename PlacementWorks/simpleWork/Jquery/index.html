@@ -13,24 +13,56 @@
         font-family: Arial, Helvetica, sans-serif;
         color: chartreuse;
     }
+    #box{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+    }
 </style>
 </head>
 
 <body>
-    <button id="hide">hide</button>
-    <button id="show">show</button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae exercitationem labore totam suscipit, sapiente
-        temporibus ullam praesentium eaque facilis expedita?
-    </p>
+    <div id="toggle-div">
+        <button id="hide">hide</button>
+        <button id="show">show</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae exercitationem labore totam suscipit, sapiente
+            temporibus ullam praesentium eaque facilis expedita?
+        </p>
+    </div>
+    <button id="toggle-btn">toggle</button>
+    <div id="box"></div>
+    <input type="text" id="text-input">
+    <button id="popup">popup</button>
+    
     <script>
-        $("#hide").click(function () {
-            $("p").hide();
-            $("#hide").hide();
+        $(document).ready(function(){
+            $("#hide").click(function () {
+                $("p").hide();
+                $("#hide").hide("slow",function(){
+                    alert("the text is hidden");
+                });
+            });
         });
-
-        $("#show").click(function () {
-            $("p").show();
-            $("#hide").show();
+        $(document).ready(function(){
+            $("#show").click(function () {
+                $("p").show(1000);
+                $("#hide").show(1000);
+            });
+        });
+        $(document).ready(function(){
+            $("#toggle-btn").click(function () {
+                $("#toggle-div").toggle(1000);
+            });
+        });
+        $(document).ready(function(){
+            $("#box").click(function () {
+                $("#box").animate({marginLeft:'500px',width:'500px'});
+            });
+        });
+        $(document).ready(function(){
+            $("#popup").click(function () {
+                alert("value:"+$("#text-input").val());
+            });
         });
     </script>
 </body>

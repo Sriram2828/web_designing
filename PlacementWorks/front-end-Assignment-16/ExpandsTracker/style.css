@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    margin: 0 5px;
+    padding: 4px;
+    
+}
+#add-expense{
+    color: white;
+    background-color: rgb(68, 171, 68);
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+}
+
+table {
+    width: 733px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.total, .filter {
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.total , .filter{
+    margin-left: 490px;
+}
+.total{
+    margin-left: 650px;
+    margin-bottom: -2px;
+}
