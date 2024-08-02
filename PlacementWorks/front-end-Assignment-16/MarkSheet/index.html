@@ -1,220 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annual Statement of Marks</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-           
-        }
-        .container {
-            max-width: 1000px;
-            background-image: url(back.png);
-            background-size: 40px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header, .content, .footer {
-            text-align: center;
-        }
-        .header {
-            margin-bottom: 20px;
-        }
-        .header img {
-            width: 80px;
-        }
-        .header h1 {
-            font-size: 24px;
-            margin: 5px 0;
-        }
-        .header h2 {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-        .marks-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 5px;
-        }
-        .marks-table2 {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 0px;
-        }
-        .marks-table th, .marks-table td {
-            border: 2px solid #ffb60b;
-            padding: 8px;
-            text-align: center;
-            font-size: 14px;
-        }
-        #leftA{
-            text-align: start;
-        }
-        .marks-table th {
-            background-color: #ffeaba;
-        }
-        .marks-table td{
-            background-color: #ffeaba;
-        }
-        .footer {
-            font-size: 12px;
-            color: #555;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<style>
+    .container {
+        max-width: 1000px;
+        background-image: url(back.png);
+        background-size: 40px;
+        padding: 0 20px 20px 20px;
+        color: black;
+    }
+
+    .header,
+    .content,
+    .footer {
+        text-align: center;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .header img {
+        width: 80px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+
+    .header h2 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .marks-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 5px;
+        color: rgba(81, 19, 19, 0.821);
+    }
+
+    .marks-table h4 {
+        margin: 0;
+        color: black;
+    }
+
+    .marks-table2 {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 0px;
+    }
+
+    .marks-table th,
+    .marks-table td {
+        border: 2px solid #ba8916;
+        padding: 8px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .marks-table23 td {
+        border: none;
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    .marks-table td {
+        color: black;
+    }
+
+    #leftA {
+        text-align: start;
+    }
+
+    .marks-table th {
+        background-color: #ffeaba50;
+
+
+    }
+
+    .marks-table td {
+        background-color: #ffeaba50;
+
+    }
+
+    table {
+        border: 2px solid #ba8916;
+        border-bottom: none;
+    }
+</style>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .bo {
+        background-image: url(./BG.png);
+        background-size: 60px;
+        width: 700px;
+        padding: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* body content */
+    .main {
+        border: 5px solid rgba(81, 19, 19, 0.821);
+        background-image: url(./BG.png);
+        background-size: 60px;
+        width: 700px;
+        font-family: 'Times New Roman', Times, serif;
+        background-position: center;
+    }
+
+    .mainimg {
+        background-image: url(./logo18o.png);
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .main2 {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* sr.no qr code */
+    .sr {
+        display: flex;
+        padding-left: 10px;
+    }
+
+    .sr1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .qr {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    /* logo and institute curve  */
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .para p {
+        margin-top: -20px;
+        text-align: center;
+        color: rgba(81, 19, 19, 0.821);
+    }
+
+    /* table content */
+    .maintable h1 {
+        text-align: center;
+        color: #c29120;
+        margin: 0;
+    }
+
+    /* footer */
+    footer,
+    h5 {
+        color: rgba(81, 19, 19, 0.821);
+        text-align: center;
+        margin: 0;
+        padding-bottom: 3px;
+
+    }
+
+    .sign {
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        color: rgba(81, 19, 19, 0.821);
+    }
+
+    .sign1 {
+        padding-left: 20px;
+        display: flex;
+        margin: 0;
+        color: rgba(81, 19, 19, 0.821);
+    }
+
+    .author p {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 35px;
+        color: black;
+    }
+
+    input {
+        background: none;
+        border: none;
+        scrollbar-width: none;
+        text-align: center;
+        width: 40px;
+        text-decoration: none;
+    }
+</style>
+
 <body>
-    <div class="cover">
-     <div class="container">
-        <div class="header">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span>Sr. No. 00000000</span>
-                <img src="logo.png" alt="Logo" style="height: 200px;width: 200px;">
-                <span>QR Code Here</span>
+    <div class="bo">
+        <div class="main">
+            <div class="mainimg">
+                <div class="main2">
+                    <div class="sr1">
+                        <div class="sr">
+                            <h3>Sr.No.</h3>
+                            <h3 style="color: rgba(81, 19, 19, 0.821);">00000000</h3>
+                        </div>
+                        <div class="qr"><img src="./Untitled.png" alt="" width="100px"></div>
+                    </div>
+                </div>
+                <div class="main2">
+                    <div class="logo"><img src="./logo.png"></div>
+                </div>
+                <div class="main2">
+                    <div class="logo"><img src="./curve.png" alt="" width="630px"></div>
+                </div>
+                <div class="para">
+                    <p style="font-size: 19px;"><b>Associated with Technical and Paramedical Education Council<br> An
+                            Autonomous Institution Recognized by Government of India</b></p>
+                </div>
+                <div class="maintable">
+                    <h1>Annual Statement of Marks</h1>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <table class="marks-table">
+                            <tr>
+                                <th colspan="2">Name of the Candidate<br>
+                                    <h4>[Candidate's Name]</h4>
+                                </th>
+                                <th>Course name with Code <br>
+                                    <h4>Diploma in Fire & Safety Management<br>DFS012</h4>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Reg. No.<br>
+                                    <h4>[Registration Number]</h4>
+                                </th>
+                                <th>Enrollment No.<br>
+                                    <h4>[Enrollment Number]</h4>
+                                </th>
+                                <th>Authorized Training Centre Name with Code<br>
+                                    <h4>(Authorized Training Centre's Name)<br>(Authorized Training Centre's Code)</h4>
+                                </th>
+                            </tr>
+                            <tr></tr>
+                        </table>
+                        <table class="marks-table marks-table2">
+                            <thead>
+                                <tr>
+                                    <th>Subject Code</th>
+                                    <th>Subject Name</th>
+                                    <th>Max.<br>Marks</th>
+                                    <th colspan="3">Marks Obtained in Figure<br>Theory Practical Total</th>
+                                    <th>Total in Words</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DFS012-101</td>
+                                    <td>Fire Science and Technology</td>
+                                    <td>100</td>
+                                    <td><input type="number" maxlength="3" id="t1"></td>
+                                    <td><input type="number" maxlength="3" id="p1"></td>
+                                    <td><span id="tt1"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-102</td>
+                                    <td>Fire Prevention and Investigation</td>
+                                    <td>100</td>
+                                    <td>XX</td>
+                                    <td>XX</td>
+                                    <td>00</td>
+                                    <td>Zero Zero</td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-103</td>
+                                    <td>Fire Protection and Survey</td>
+                                    <td>100</td>
+                                    <td>00</td>
+                                    <td>XX</td>
+                                    <td>00</td>
+                                    <td>Zero Zero</td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-104</td>
+                                    <td>Fire Extinction and Control</td>
+                                    <td>100</td>
+                                    <td>XX</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td>Zero Zero</td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-105</td>
+                                    <td>Industrial Safety Management</td>
+                                    <td>100</td>
+                                    <td>XX</td>
+                                    <td>XX</td>
+                                    <td>00</td>
+                                    <td>Zero Zero</td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-106</td>
+                                    <td>Practical I</td>
+                                    <td>100</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td>Zero Zero</td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-107</td>
+                                    <td>Practical II</td>
+                                    <td>100</td>
+                                    <td>XX</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>DFS012-108</td>
+                                    <td>Practical III</td>
+                                    <td>100</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td>Zero Zero</td>
+                                </tr>
+                                <tr class="marks-table23">
+                                    <td colspan="" id="leftA">
+                                        <h4>Grand Total </h4>
+                                    </td>
+                                    <td colspan="6" id="leftA">000</td>
+                                </tr>
+                                <tr class="marks-table23">
+                                    <td colspan="" id="leftA">
+                                        <h4>in words</h4>
+                                    </td>
+                                    <td colspan="6" id="leftA">Zero Hundred Zero Zero</td>
+                                </tr>
+                    </div>
+                    </tbody>
+                    </table>
+                    <table class="marks-table">
+                        <tr>
+                            <th>Month and Year of Examination</th>
+                            <th>No. of Subject Offered</th>
+                            <th>Result</th>
+                            <th>Percentage</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>May 2020</td>
+                            <td>8</td>
+                            <td>PASS</td>
+                            <td>00.00%</td>
+                            <td>(Grade)</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <h1>अखिल भारतीय अग्नि प्रौद्योगिकी एवं सुरक्षा प्रबंधन विद्यापीठ</h1>
-            <h2>All India Institute of Fire Technology and Safety Management</h2>
-            <p>Associated with Technical and Paramedical Education Council</p>
-            <p>An Autonomous Institution Recognized by Government of India</p>
-            <h3>Annual Statement of Marks</h3>
+            <footer>
+                <div class="author">
+                    <p style="font-size: 14px;"><b>(Signature of Deputy<br>Controller of Examination)</b></p>
+                </div>
+                <div class="sign">
+                    <div class="sign1">
+                        <h5>Date:<h5 id="current_date" style="color: black;"></h5>
+                        </h5>
+                    </div>
+                    <h5>Deputy Controller of Examination</h5>
+                </div>
+                <h5>Subject marked with ★ indicates Exemption</h5>
+            </footer>
         </div>
-        <div class="content">
-            <table class="marks-table">
-                <tr>
-                    <th colspan="2">Name of the Candidate<br>[Candidate's Name]</th>
-                    <th>Course name with Code <br>Diploma in Fire & Safety Management (DFS012)</th>
-                </tr>
-                <tr>
-                    <th>Reg. No.<br>[Registration Number]</th>
-                    <th>Enrollment No.<br>[Enrollment Number]</th>
-                    <th>Authorized Training Centre Name with Code<br>(Authorized Training Centre's Name)<br>(Authorized Training Centre's Code)</th>
-                </tr>
-                <tr>
-                   
-                </tr>
-            </table>
-
-            <table class="marks-table marks-table2">
-                <thead>
-                    <tr>
-                        <th>Subject Code</th>
-                        <th>Subject Name</th>
-                        <th>Max.<br>Marks</th>
-                        <th colspan="3">Marks Obtained in Figure<br>Theory Practical   Total</th>                                  
-                        <th>Total in Words</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>DFS012-101</td>
-                        <td>Fire Science and Technology</td>
-                        <td>100</td>
-                        <td>XX</td>
-                        <td>XX</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-102</td>
-                        <td>Fire Prevention and Investigation</td>
-                        <td>100</td>
-                        <td>XX</td>
-                        <td>XX</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-103</td>
-                        <td>Fire Protection and Survey</td>
-                        <td>100</td>
-                        <td>00</td>
-                        <td>XX</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-104</td>
-                        <td>Fire Extinction and Control</td>
-                        <td>100</td>
-                        <td>XX</td>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-105</td>
-                        <td>Industrial Safety Management</td>
-                        <td>100</td>
-                        <td>XX</td>
-                        <td>XX</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-106</td>
-                        <td>Practical I</td>
-                        <td>100</td>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-107</td>
-                        <td>Practical II</td>
-                        <td>100</td>
-                        <td>XX</td>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td>DFS012-108</td>
-                        <td>Practical III</td>
-                        <td>100</td>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Zero Zero</td>
-                    </tr>
-                    <tr>
-                        <td colspan="7" id="leftA">Grand Total   000 <br>in words   Zero Hundred Zero Zero</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table class="marks-table">
-                <tr>
-                    <th>Month and Year of Examination</th>                    
-                    <th>No. of Subject Offered</th>                   
-                    <th>Result</th>                    
-                    <th>Percentage</th>                    
-                    <th>Grade</th>
-                </tr>
-                <tr>
-                    <td>May 2020</td>
-                    <td>8</td>
-                    <td>PASS</td>
-                    <td>00.00%</td>
-                    <td>(Grade)</td>
-                </tr>
-            </table>
-        </div>
-        <div class="footer">
-            <p >Subject marked with * indicates Exemption</p>
-            <p>Date: [Date of Result]</p>
-            <p>Signature of Deputy Controller of Examination</p>
-            <p>Controller of Examination</p>
-        </div>
-    </div>   
     </div>
-    
+    </div>
+    <br>
+    <br>
+    <div class="crtbtn"><button onclick="create()">Create Certificate</button></div>
+    <script>
+        document.getElementById("tt1").innerHTML = document.getElementById("t1").value + document.getElementById("p1").value;
+        // dateofresult
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+
+        // number to words
+        function numToWords(n) {
+            let words = [];
+            while (n > 0) {
+                let a = n % 10
+                switch (a) {
+                    case 0:
+                        words.unshift("zero");
+                        break;
+                    case 1:
+                        words.unshift("one");
+                        break;
+                    case 2:
+                        words.unshift("two");
+                        break;
+                    case 3:
+                        words.unshift("three");
+                        break;
+                    case 4:
+                        words.unshift("four");
+                        break;
+                    case 5:
+                        words.unshift("five");
+                        break;
+                    case 6:
+                        words.unshift("six");
+                        break;
+                    case 7:
+                        words.unshift("seven");
+                        break;
+                    case 8:
+                        words.unshift("eight");
+                        break;
+                    case 9:
+                        words.unshift("nine");
+                        break;
+                }
+                n = parseInt(n / 10)
+            }
+            return words.join(" ");
+        }
+        console.log(numToWords(100));
+
+    </script>
 </body>
+
 </html>
