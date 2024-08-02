@@ -1,5 +1,4 @@
-// const sId = document.getElementById('reg');
-// sId = sId.value;
+// let stdId = document.getElementById("reg");
 let stdData = `[
     {
         "id" : 1,
@@ -14,8 +13,8 @@ let stdData = `[
 ]`;
 let x = JSON.parse(stdData);
 console.log(x[1].stdName);
-
+console.log(JSON.stringify(x));
 
 // function display(params) {
     
-// };
+// }
